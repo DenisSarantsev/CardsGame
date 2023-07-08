@@ -72,6 +72,34 @@
 			}
 		}
 }
+.red-card {
+	animation-name: redAlarm;
+	animation-duration: 100ms;
+	animation-timing-function: linear;
+}
+
+@keyframes redAlarm {
+	0% {
+		background-color: rgba(219, 219, 219, 1);
+	}
+	50% {
+		background-color: red;
+	}
+	100% {
+		background-color: rgba(219, 219, 219, 1);
+	}
+}
+
+.selected-card {
+	background-color: greenyellow;
+	&:hover {
+		background-color: greenyellow;
+	}
+}
+
+.selected-hidden {
+	display: none;
+}
 
 .progressbar {
 	display: flex;

@@ -66,6 +66,34 @@
   cursor: pointer;
 }
 
+.red-card {
+  animation-name: redAlarm;
+  animation-duration: 100ms;
+  animation-timing-function: linear;
+}
+
+@keyframes redAlarm {
+  0% {
+    background-color: rgb(219, 219, 219);
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: rgb(219, 219, 219);
+  }
+}
+.selected-card {
+  background-color: greenyellow;
+}
+.selected-card:hover {
+  background-color: greenyellow;
+}
+
+.selected-hidden {
+  display: none;
+}
+
 .progressbar {
   display: flex;
   flex-direction: column;
